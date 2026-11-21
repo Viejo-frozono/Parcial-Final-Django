@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Programas{% endblock %}</title>
-</head>
-<body>
-    <h1>Registro de programas</h1>
 
-    {% block content %}
-    {% endblock %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .contenedor {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000020;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563eb;
+        }
+
+        input {
+            padding: 9px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Registro de programas</h1>
+
+        {% block content %}
+        {% endblock %}
+    </div>
 </body>
 </html>
